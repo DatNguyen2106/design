@@ -8,8 +8,8 @@ public class Main1 {
 	public static void main(String[] args) {
 		ExamBuilder builder = new ExamBuilder();
 		Exam exam = builder.addTrueFalseQuestion("What is True/False Question?", 4.0, "True")
-					.addMultipleChoiceQuestion("Age?", 5.0, new ArrayList<>(Arrays. asList("A", "B", "C")), "B")
-					.addMultipleResponseQuestion("Place?", 10.0, new ArrayList<>(Arrays. asList("A", "B", "C")), new ArrayList<>(Arrays. asList("B", "C")))
+					.addMultipleChoiceQuestion("What did you choose?", 5.0, new ArrayList<>(Arrays. asList("A", "B", "C")), "B")
+					.addMultipleResponseQuestion("What do you response?", 10.0, new ArrayList<>(Arrays. asList("A", "B", "C")), new ArrayList<>(Arrays. asList("B", "C")))
 					.prepareExam();
 		exam.display();
 		ArrayList<String> QuestionAnswered = new ArrayList();
